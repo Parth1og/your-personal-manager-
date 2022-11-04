@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Your Personal Manager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body bgcolor="lime">
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="Meditation.html" class="w3-bar-item w3-button" target="_blank">Meditation</a>
+  <a href="Notes.html" class="w3-bar-item w3-button" target="_blank">Notes</a>
+  <a href="Weather.html" class="w3-bar-item w3-button" target="_blank">Weather</a>
+  <a href="MathsMads.html" class="w3-bar-item w3-button" target="_blank">MathsMads</a>
+</div>
+
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Your Personal Manager</h1>
+  </div>
+</div>
+
+<div class="w3-container">
+<h1 class="w3-red">Meditation app</h1>
+<p>This app gives you the benefit of listening to some charming sounds of nature like of waves and raindrops to relax your mind and help to meditate.</p>
+<h1 class="w3-red">Notes app</h1>
+<p>This app gives you the benefit of taking notes online and seeing them whenever you want without caring of a pencil/pen or a sticky note copy.</p>
+<h1 class="w3-red">Weather app</h1>
+<p>This app give you the benefit of seeing weather of any city all over the world which can help you to decide whether to plan a trip or not to a place.</p>
+<h1 class="w3-red">MathsMads</h1>
+<p>This app gives you the benefit of knowing different types of numbers and calculating them helping you become carefree of the calculations of some different types of numbers.</p>
+</div>
+     
+<script>
+function openLeftMenu() {
+  document.getElementById("leftMenu").style.display = "block";
+}
+
+function closeLeftMenu() {
+  document.getElementById("leftMenu").style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>
+     
+</body>
+</html>
